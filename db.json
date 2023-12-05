@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Juliet Oma",
+      "email": "julie@yahoo.com",
+      "number": "08100000000",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "username": "James Williams",
+      "email": "jameswilly@gmail.com",
+      "number": "08111111111",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "username": "Ahmed Ali",
+      "email": "ahmedali012@gmail.com",
+      "number": "09022222222",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "username": "Grace Funsho",
+      "email": "gracefunsho@gmail.com",
+      "number": "09033333333",
+      "password": "1234"
+    },
+    {
+      "username": "narendra",
+      "email": "naren.v487@gmail.com",
+      "number": "9090909090",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "username": "Naren",
+      "email": "techne487@gmail.com",
+      "number": "8989898989",
+      "password": "Naren",
+      "id": 6
+    },
+    {
+      "username": "naren",
+      "email": "naren@gmail.com",
+      "number": "9898989898",
+      "password": "Naren",
+      "id": 7
+    },
+    {
+      "username": "kumar",
+      "email": "kumar@fgmail.com",
+      "number": "7878787878",
+      "password": "Naren",
+      "id": 8
+    },
+    {
+      "username": "naren",
+      "email": "naren@gmail.com",
+      "number": "9090909090",
+      "password": "Naren",
+      "id": 9
+    },
+    {
+      "username": "abcasd",
+      "email": "techne487@gmail.com",
+      "number": "9898989898",
+      "password": "Techne",
+      "id": 10
+    }
+  ]
+}
