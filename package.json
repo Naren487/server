@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"npx nodemon@latest server.js"
+    "start":"npx nodemon@latest index.js"
   },
   "keywords": [],
   "author": "",
