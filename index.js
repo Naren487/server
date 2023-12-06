@@ -1,10 +1,19 @@
 var express = require('express');  
 var app = express();
 const cors=require("cors");
-app.use(express.json());
-app.use(cors());
 const stripe=require("stripe")("sk_test_51O2AJnSDHbApW9pLAsmuxU3GfInrITdNKafzg0cgGpBhRGmei2vwwcU3ot92vYW5YigaJyKivcKfkxRcgdpbbEuk00A2d1RidL")
 //checkout api
+
+app.use(cors(
+    {
+        origin:["https://final-ecommerce-five.vercel.app"],
+        methods:["POST","GET"],
+        credentials:true
+    }
+));
+
+app.use(express.json());
+app.use(cors());
 app.get("/",(req,res)=>{
     res.json("Hello");
 })
@@ -26,8 +35,8 @@ app.post('/api/create-checkout-session',async(req,res)=>{
         payment_method_types:["card"],
         line_items:lineItems,
         mode:"payment",
-        success_url:"http://184.72.88.173:3000/success",
-        cancel_url:"http://184.72.88.173:3000/cancel",
+        success_url:"https://final-ecommerce-five.vercel.app:3000/success",
+        cancel_url:"https://final-ecommerce-five.vercel.app:3000/cancel",
 
     });
     res.json({id:session.id});
