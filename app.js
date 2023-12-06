@@ -5,7 +5,9 @@ app.use(express.json());
 app.use(cors());
 const stripe=require("stripe")("sk_test_51O2AJnSDHbApW9pLAsmuxU3GfInrITdNKafzg0cgGpBhRGmei2vwwcU3ot92vYW5YigaJyKivcKfkxRcgdpbbEuk00A2d1RidL")
 //checkout api
-
+app.get("/",(req,res)=>{
+    res.json("Hello");
+})
 app.post('/api/create-checkout-session',async(req,res)=>{
     const {products}=req.body;
     const lineItems=products.map((product)=>({
