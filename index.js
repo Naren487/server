@@ -1,9 +1,9 @@
-var express = require('express');  
-var app = express();
+const express = require('express');  
 const cors=require("cors");
-const stripe=require("stripe")("sk_test_51O2AJnSDHbApW9pLAsmuxU3GfInrITdNKafzg0cgGpBhRGmei2vwwcU3ot92vYW5YigaJyKivcKfkxRcgdpbbEuk00A2d1RidL")
 //checkout api
 
+var app = express();
+const stripe=require("stripe")("sk_test_51O2AJnSDHbApW9pLAsmuxU3GfInrITdNKafzg0cgGpBhRGmei2vwwcU3ot92vYW5YigaJyKivcKfkxRcgdpbbEuk00A2d1RidL")
 app.use(cors(
     {
         origin:["https://final-ecommerce-five.vercel.app"],
